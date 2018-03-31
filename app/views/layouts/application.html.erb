@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TanerOto</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- Option Panel -->
+    <div class="option-panel option-panel-collased">
+        <h2>Change Color</h2>
+        <div class="color-plate default-plate" data-color="default"></div>
+        <div class="color-plate blue-plate" data-color="blue"></div>
+        <div class="color-plate yellow-plate" data-color="yellow"></div>
+        <div class="color-plate blue-light-plate" data-color="blue-light"></div>
+        <div class="color-plate green-light-plate" data-color="green-light"></div>
+        <div class="color-plate green-plate" data-color="green"></div>
+        <div class="color-plate yellow-light-plate" data-color="yellow-light"></div>
+        <div class="color-plate green-light-2-plate" data-color="green-light-2"></div>
+        <div class="color-plate olive-plate" data-color="olive"></div>
+        <div class="color-plate purple-plate" data-color="purple"></div>
+        <div class="color-plate midnight-blue-plate" data-color="midnight-blue"></div>
+        <div class="color-plate red-plate" data-color="red"></div>
+        <div class="setting-button">
+            <i class="fa fa-gear"></i>
+        </div>
+    </div>
+    <!-- /Option Panel -->
+
+    <!-- Top Header start -->
+    <header class="top-header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+                    <div class="list-inline">
+                        <a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Need Support? 1-8X0-666-8X88</a>
+                        <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>info@themevessel.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+                    <ul class="social-list clearfix pull-right">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-rss"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="sign-in"><i class="fa fa-user"></i> Log In / Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Top Header end -->
+
+    <!-- Main header start -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navigation" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <%= link_to root_path, class:"logo" do %>
+                        <img src="/assets/logos/green-light-logo.png" alt="logo">
+                    <% end %>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-collapse collapse" role="navigation" aria-expanded="true" id="app-navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <%= link_to "Anasayfa", root_path %>
+                        </li>
+                        <li class="dropdown">
+                            <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                                Car Listing<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0">List Layout</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="car-list.html">Right sidebar</a></li>
+                                        <li><a href="car-list-2.html">Left Sidebar</a></li>
+                                        <li><a href="car-list-3.html">Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0">Grid Layout</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="car-grid.html">Right sidebar</a></li>
+                                        <li><a href="car-grid-2.html">Left Sidebar</a></li>
+                                        <li><a href="car-grid-3.html">Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0">Car Details</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="car-details.html">Car Details</a></li>
+                                        <li><a href="car-details-2.html">Car Details 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                                Pages<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="services-2.html">Services 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0">Agent List</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="agent-list.html">Agent List</a></li>
+                                        <li><a href="agent-detail.html">Agent Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="signup.html">Signup</a></li>
+                                <li><a href="forgot-password.html">Forgot Password</a></li>
+                                <li><a href="404.html">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                                <%= link_to 'İletişim', pages_contact_path %>
+                        </li>
+                        <li class="dropdown">
+                            <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                                Blog<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="with-right-sidebar.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-single-sidebar.html">Blog Left Sidebar</a></li>
+                                <li><a href="fullwidth.html">Blog Fullwidth</a></li>
+                                <li><a href="blog-single.html">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                        <li>
+                            <div class="navbar-search-box">
+                                <form class="navbar-search" method="GET">
+                                    <input type="search" placeholder="Search......" name="search" class="navbar-search-input" onkeyup="buttonUp();" required>
+                                    <button type="submit" class="navbar-search-submit">Go</button>
+                                    <span class="navbar-search-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                <!-- /.container -->
+            </nav>
+        </div>
+    </header>
+    <!-- Main header end -->
+    <%= yield %>
+
+    <!-- Footer start-->
+    <footer class="main-footer clearfix">
+        <div class="container">
+            <!-- Sub footer-->
+            <div class="sub-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="img/logos/footer-logo.png" alt="footer-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2 col-md-4 col-sm-6 col-xs-12">
+                        <form action="#" method="GET">
+                            <div class="form-group">
+                                <input type="text" class="form-contact" name="email" placeholder="Enter your email">
+                                <button type="submit" name="submitNewsletter" class="btn btn-default button-small">
+                                    <i class="fa fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <div class="social-list clearfix">
+                            <a href="#" class="bg-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="bg-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-google">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="bg-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="bg-pinterest">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer info-->
+            <div class="footer-info">
+                <div class="row">
+                    <!-- About us -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <h2 class="title">Contact Us</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printing and typesetting
+                            </p>
+                            <ul class="personal-info">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Address: 20/F Green Road, Dhanmondi, Dhaka
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    Email:<a href="mailto:info@themevessel.com">info@themevessel.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    Phone: <a href="tel:+55-417-634-7071">+55 4XX-634-7071</a>
+                                </li>
+                                 <li>
+                                    <i class="fa fa-fax"></i>
+                                    Fax: +55 4XX-634-7071
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Links -->
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <h2 class="title">Links</h2>
+                            <ul class="links">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                 <li>
+                                    <a href="car-list.html">Car Listing</a>
+                                </li>
+                                <li>
+                                    <a href="car-grid.html">Car Grid</a>
+                                </li>
+                                 <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                 <li>
+                                    <a href="with-right-sidebar.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="car-details.html">Car Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tags -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <h2 class="title">Tags</h2>
+                            <div class="tags">
+                                <a href="#">Cars</a>
+                                <a href="#">Cars Dealer</a>
+                                <a href="#">Car Template</a>
+                                <a href="#">Dealer</a>
+                                <a href="#">Auto Car</a>
+                                <a href="#">Automobile</a>
+                                <a href="#">Vehicles</a>
+                                <a href="#">Journey</a>
+                                <a href="#">Car Selling</a>
+                                <a href="#">Car Dealing</a>
+                                <a href="#">Car Website</a>
+                                <a href="#">Car Template</a>
+                                <a href="#">HTML Template</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recent cars -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-item recent-car">
+                            <h2 class="title">Recent Cars</h2>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/recent/recent-1.jpg" alt="recent-1">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3>
+                                        <a href="car-details.html">Porsche Cayen Last</a>
+                                    </h3>
+                                    <span>October 18, 2017</span>
+                                    <p>$36.000</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/recent/recent-2.jpg" alt="recent-2">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3>
+                                        <a href="car-details.html">McLaren-650S</a>
+                                    </h3>
+                                    <span>november 13, 2017</span>
+                                    <p>$28.490</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/recent/recent-3.jpg" alt="recent-3">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3>
+                                        <a href="car-details.html">BMW e46 M3 Diski Serie</a>
+                                    </h3>
+                                    <span>december 21, 2017</span>
+                                    <p>$49.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end-->
+  </body>
+</html>

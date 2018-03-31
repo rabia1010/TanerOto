@@ -1,0 +1,65 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 30/03/2017 10:19
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("Flaticon.eot");
+  src: url("Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("Flaticon.woff") format("woff"),
+       url("Flaticon.ttf") format("truetype"),
+       url("Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: auto;
+font-style: normal;
+margin-left: 0px;
+}
+
+.flaticon-cup:before { content: "\f100"; }
+.flaticon-call-center-woman:before { content: "\f101"; }
+.flaticon-call-center-agent:before { content: "\f102"; }
+.flaticon-female-call-center-agent:before { content: "\f103"; }
+.flaticon-interface:before { content: "\f104"; }
+.flaticon-bar-graph-in-speech-bubble:before { content: "\f105"; }
+.flaticon-dollar-sticker:before { content: "\f106"; }
+.flaticon-satellite-transmission:before { content: "\f107"; }
+.flaticon-mixer:before { content: "\f108"; }
+.flaticon-car:before { content: "\f109"; }
+.flaticon-car-tire-change:before { content: "\f10a"; }
+.flaticon-wrench:before { content: "\f10b"; }
+.flaticon-key:before { content: "\f10c"; }
+.flaticon-placeholder:before { content: "\f10d"; }
+.flaticon-factory-stock-house:before { content: "\f10e"; }
+.flaticon-paint-brush:before { content: "\f10f"; }
+.flaticon-engine:before { content: "\f110"; }
+.flaticon-dollar-symbol:before { content: "\f111"; }
+.flaticon-rim:before { content: "\f112"; }
+.flaticon-man-and-recycling-bin:before { content: "\f113"; }
+.flaticon-settings:before { content: "\f114"; }
+.flaticon-plug:before { content: "\f115"; }
+.flaticon-car-door:before { content: "\f116"; }
+.flaticon-speedometer:before { content: "\f117"; }
+.flaticon-sedan-car-front:before { content: "\f118"; }
+.flaticon-time:before { content: "\f119"; }
+.flaticon-transport:before { content: "\f11a"; }
+.flaticon-racing-flag:before { content: "\f11b"; }
+.flaticon-road-with-broken-line:before { content: "\f11c"; }
+.flaticon-automatic-flash-symbol:before { content: "\f11d"; }
+.flaticon-gasoline-pump:before { content: "\f11e"; }
+.flaticon-call-center-operator:before { content: "\f11f"; }
+.flaticon-handshake:before { content: "\f120"; }
+.flaticon-security:before { content: "\f121"; }
