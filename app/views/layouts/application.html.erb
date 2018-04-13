@@ -6,6 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap-select.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap-slider', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap-submenu', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'wow.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'ie-emulation-modes-warning', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'ie10-viewport-bug-workaround', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -36,7 +44,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
                     <div class="list-inline">
-                        <a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Need Support? 1-8X0-666-8X88</a>
+                        <a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Yardım ister misiniz? 1-8X0-666-8X88</a>
                         <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>info@themevessel.com</a>
                     </div>
                 </div>
@@ -67,9 +75,6 @@
                                 <i class="fa fa-rss"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="login.html" class="sign-in"><i class="fa fa-user"></i> Log In / Register</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -81,15 +86,9 @@
     <header class="main-header">
         <div class="container">
             <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navigation" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <div class="navbar-header">                    
                     <%= link_to root_path, class:"logo" do %>
-                        <img src="/assets/logos/green-light-logo.png" alt="logo">
+                        <img src="/assets/logo.png" alt="Taner Oto Kurtarma">
                     <% end %>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -100,34 +99,15 @@
                         </li>
                         <li class="dropdown">
                             <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
-                                Car Listing<span class="caret"></span>
+                                Şubelerimiz<span class="caret"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a tabindex="0">List Layout</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="car-list.html">Right sidebar</a></li>
-                                        <li><a href="car-list-2.html">Left Sidebar</a></li>
-                                        <li><a href="car-list-3.html">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a tabindex="0">Grid Layout</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="car-grid.html">Right sidebar</a></li>
-                                        <li><a href="car-grid-2.html">Left Sidebar</a></li>
-                                        <li><a href="car-grid-3.html">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a tabindex="0">Car Details</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="car-details.html">Car Details</a></li>
-                                        <li><a href="car-details-2.html">Car Details 2</a></li>
-                                    </ul>
-                                </li>
+                            <ul class="dropdown-menu">                                
+                                <li><a href="about.html">A Şubesi</a></li>
+                                <li><a href="pricing-tables.html">B Şubesi</a></li>
+                                <li><a href="faq.html">C Şubesi</a></li>              
                             </ul>
                         </li>
+                        <!--
                         <li class="dropdown">
                             <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                 Pages<span class="caret"></span>
@@ -156,8 +136,12 @@
                                 <li><a href="404.html">404 Error</a></li>
                             </ul>
                         </li>
+                        -->
                         <li>
                                 <%= link_to 'İletişim', pages_contact_path %>
+                        </li>
+                        <li>
+                                <%= link_to 'Hakkımızda', root_path %>
                         </li>
                         <li class="dropdown">
                             <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
@@ -175,7 +159,7 @@
                         <li>
                             <div class="navbar-search-box">
                                 <form class="navbar-search" method="GET">
-                                    <input type="search" placeholder="Search......" name="search" class="navbar-search-input" onkeyup="buttonUp();" required>
+                                    <input type="search" placeholder="Ara......" name="search" class="navbar-search-input" onkeyup="buttonUp();" required>
                                     <button type="submit" class="navbar-search-submit">Go</button>
                                     <span class="navbar-search-icon">
                                         <i class="fa fa-search"></i>
@@ -243,14 +227,14 @@
                     <!-- About us -->
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-item">
-                            <h2 class="title">Contact Us</h2>
+                            <h2 class="title">İletişim Bölümü</h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printing and typesetting
                             </p>
                             <ul class="personal-info">
                                 <li>
                                     <i class="fa fa-map-marker"></i>
-                                    Address: 20/F Green Road, Dhanmondi, Dhaka
+                                    Adres: Samsun
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
@@ -258,7 +242,7 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
-                                    Phone: <a href="tel:+55-417-634-7071">+55 4XX-634-7071</a>
+                                    Tlg: <a href="tel:+55-417-634-7071">+55 4XX-634-7071</a>
                                 </li>
                                  <li>
                                     <i class="fa fa-fax"></i>
@@ -270,28 +254,19 @@
                     <!-- Links -->
                     <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
                         <div class="footer-item">
-                            <h2 class="title">Links</h2>
+                            <h2 class="title">Linkler</h2>
                             <ul class="links">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">Anasayfa</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About Us</a>
+                                    <a href="about.html">Hakkımızda</a>
                                 </li>
                                  <li>
-                                    <a href="car-list.html">Car Listing</a>
+                                    <a href="car-list.html">Araba Listeleme</a>
                                 </li>
                                 <li>
-                                    <a href="car-grid.html">Car Grid</a>
-                                </li>
-                                 <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                                 <li>
-                                    <a href="with-right-sidebar.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="car-details.html">Car Details</a>
+                                    <a href="car-grid.html">Şubeler</a>
                                 </li>
                             </ul>
                         </div>

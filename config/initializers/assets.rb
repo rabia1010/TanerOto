@@ -7,6 +7,14 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.paths << Emoji.images_path
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
+Rails.application.config.assets.precompile += %w( app.js )
+Rails.application.config.assets.precompile += %w( bootstrap-select.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap-slider.js )
+Rails.application.config.assets.precompile += %w( bootstrap-submenu.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( wow.min.js )
+Rails.application.config.assets.precompile += %w( ie-emulation-modes-warning.js )
+Rails.application.config.assets.precompile += %w( ie10-viewport-bug-workaround.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
